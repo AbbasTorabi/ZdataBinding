@@ -9,6 +9,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+you must create Dynamic variable to bind textfiled value.
+like this:
+var my_variable: Dynamic<String> = Dynamic("")
+
 ## Installation
 
 ZdataBinding is available through [CocoaPods](https://cocoapods.org). To install
