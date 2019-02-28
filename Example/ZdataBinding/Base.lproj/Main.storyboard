@@ -21,38 +21,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZdataBinding sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-C8-aek">
-                                <rect key="frame" x="16" y="28" width="343" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZdataBinding sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-C8-aek">
+                                <rect key="frame" x="16" y="28" width="343" height="37"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YqS-xs-rOR" customClass="BindingTextField" customModule="Pods_ZdataBinding_Example">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YqS-xs-rOR" customClass="BindingTextField" customModule="Pods_ZdataBinding_Example">
                                 <rect key="frame" x="16" y="154" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lAg-4g-4jz"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-8k-0wI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-8k-0wI">
                                 <rect key="frame" x="141" y="221" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gu9-nO-IdN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
                                 <state key="normal" title="Result"/>
                                 <connections>
                                     <action selector="ResultBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6EK-Jt-iOM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI9-LL-1tr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI9-LL-1tr">
                                 <rect key="frame" x="16" y="275" width="343" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="y3c-tH-hug"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CI9-LL-1tr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="6zs-d5-Aud"/>
+                            <constraint firstItem="YqS-xs-rOR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7cI-4G-RIB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8jt-8k-0wI" secondAttribute="trailing" constant="125" id="TrK-oi-iXf"/>
+                            <constraint firstItem="CI9-LL-1tr" firstAttribute="top" secondItem="8jt-8k-0wI" secondAttribute="bottom" constant="24" id="XvP-pU-ReV"/>
+                            <constraint firstItem="YqS-xs-rOR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ZCv-rh-TUO"/>
+                            <constraint firstItem="CI9-LL-1tr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cOF-fz-11q"/>
+                            <constraint firstItem="8jt-8k-0wI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="125" id="mrY-yT-Q6J"/>
+                            <constraint firstItem="Skk-C8-aek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="pcT-AX-Lkf"/>
+                            <constraint firstItem="Skk-C8-aek" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="q43-Qk-WeG"/>
+                            <constraint firstItem="Skk-C8-aek" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="rC6-hU-iKU"/>
+                            <constraint firstItem="8jt-8k-0wI" firstAttribute="top" secondItem="YqS-xs-rOR" secondAttribute="bottom" constant="37" id="vYv-8I-01S"/>
+                            <constraint firstItem="YqS-xs-rOR" firstAttribute="top" secondItem="Skk-C8-aek" secondAttribute="bottom" constant="89" id="xaq-UF-SZW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="MyLabel" destination="CI9-LL-1tr" id="5cc-HP-jv7"/>
