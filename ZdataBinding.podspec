@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZdataBinding'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'The library for two way data binding & add listener for hear values change.'
 
 # This description is used to generate tags and improve search results.
