@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZdataBinding_Example' do
+  pod 'ZdataBinding', :path => '../'
+
+  target 'ZdataBinding_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
