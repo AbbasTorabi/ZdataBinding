@@ -10,10 +10,11 @@
 		0E810B0FCDBBD43025A8311B95270DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		1C39C4622AAA10D86C4B03224DDBA5F9 /* Pods-ZdataBinding_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E078FE1C42AE521E2993A77FFDB2485 /* Pods-ZdataBinding_Example-dummy.m */; };
 		2DCCBD92E92790762151AE67A05E878C /* Pods-ZdataBinding_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D25E8F132E5D61ED389A9790032207AE /* Pods-ZdataBinding_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C57575F2227BD6100768122 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57575E2227BD6100768122 /* Dynamic.swift */; };
+		7C5757612227BDA900768122 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5757602227BDA900768122 /* BindingTextField.swift */; };
 		894B3A97A4C622F3B9519D7B63FCD8D0 /* ZdataBinding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EFC3142F98C6A57ABB20F2AA230DD /* ZdataBinding-dummy.m */; };
 		976155292848CBCCA52F2E89A5D7A0E7 /* Pods-ZdataBinding_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78956EE0E350C1CA97C5655EAE6F85DB /* Pods-ZdataBinding_Tests-dummy.m */; };
 		AD2840FA1BFE1B858E1287DA39E1CB72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		B8933ACFF0BF0512DFA87F4DA16F5839 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B79BCD96D9D751DD3A62D15FC5CDDEB /* ReplaceMe.swift */; };
 		BBE18CB9452F0A6B7FA7993F2D79220F /* Pods-ZdataBinding_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C06A36892027976F2C4B55C52BA667A0 /* Pods-ZdataBinding_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E24A93AB5A042A3CA5B31EA4BE8476DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		EDD019177B0D8DC1CBDDA1D5FC4E6A8E /* ZdataBinding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC91C3BD2D117F0A33E93F70AAA174D8 /* ZdataBinding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,7 +41,6 @@
 		06A0877F713A9852B411DEEDB8E156B4 /* Pods-ZdataBinding_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZdataBinding_Example.modulemap"; sourceTree = "<group>"; };
 		0A99CC873891075C5F58B21D3A49D1A3 /* Pods-ZdataBinding_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZdataBinding_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2933424A09067EFAC7D1C346373E5AB5 /* Pods-ZdataBinding_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZdataBinding_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2B79BCD96D9D751DD3A62D15FC5CDDEB /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ZdataBinding/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		2E078FE1C42AE521E2993A77FFDB2485 /* Pods-ZdataBinding_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZdataBinding_Example-dummy.m"; sourceTree = "<group>"; };
 		3639D4B5F4A1FF253C30131012F24E98 /* Pods-ZdataBinding_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZdataBinding_Example-Info.plist"; sourceTree = "<group>"; };
 		3B0E1A5447BD58CD233AE6EF44622CD9 /* ZdataBinding.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZdataBinding.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -48,6 +48,8 @@
 		69F836639D6F40466C164A58ED969312 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		78956EE0E350C1CA97C5655EAE6F85DB /* Pods-ZdataBinding_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZdataBinding_Tests-dummy.m"; sourceTree = "<group>"; };
 		79B05787EF73C5B2F0185AF773A75AFE /* ZdataBinding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZdataBinding.xcconfig; sourceTree = "<group>"; };
+		7C57575E2227BD6100768122 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dynamic.swift; path = ZdataBinding/Classes/Dynamic.swift; sourceTree = "<group>"; };
+		7C5757602227BDA900768122 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BindingTextField.swift; path = ZdataBinding/Classes/BindingTextField.swift; sourceTree = "<group>"; };
 		7ED0F193F349DD77B6DF7561DA98D9E2 /* Pods-ZdataBinding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZdataBinding_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7FE896DC6B79A04E1ABF16988FD696E7 /* Pods_ZdataBinding_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZdataBinding_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		852700E80D9F3F52C0336325304B6ED8 /* ZdataBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZdataBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,9 +121,10 @@
 		1BC8A9DF2C824305C851E1819610834E /* ZdataBinding */ = {
 			isa = PBXGroup;
 			children = (
-				2B79BCD96D9D751DD3A62D15FC5CDDEB /* ReplaceMe.swift */,
 				7A81713D9826322D6A9260FFF3C980BB /* Pod */,
 				EDF791810D07B4A146645A55D61D8B14 /* Support Files */,
+				7C57575E2227BD6100768122 /* Dynamic.swift */,
+				7C5757602227BDA900768122 /* BindingTextField.swift */,
 			);
 			name = ZdataBinding;
 			path = ../..;
@@ -316,6 +319,9 @@
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				TargetAttributes = {
+					5EEF6597ADB471C0A736FC11A837E60F = {
+						LastSwiftMigration = 1010;
+					};
 					C8B05ECFC1909D163DD316C347975C86 = {
 						LastSwiftMigration = 1010;
 					};
@@ -378,6 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C39C4622AAA10D86C4B03224DDBA5F9 /* Pods-ZdataBinding_Example-dummy.m in Sources */,
+				7C5757612227BDA900768122 /* BindingTextField.swift in Sources */,
+				7C57575F2227BD6100768122 /* Dynamic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +393,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8933ACFF0BF0512DFA87F4DA16F5839 /* ReplaceMe.swift in Sources */,
 				894B3A97A4C622F3B9519D7B63FCD8D0 /* ZdataBinding-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +583,7 @@
 			baseConfigurationReference = B935337465B4E30519EA7A37EC778415 /* Pods-ZdataBinding_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -598,6 +606,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -640,6 +650,7 @@
 			baseConfigurationReference = 7ED0F193F349DD77B6DF7561DA98D9E2 /* Pods-ZdataBinding_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -662,6 +673,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
