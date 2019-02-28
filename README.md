@@ -22,7 +22,8 @@ pod 'ZdataBinding'
 
 ## Author
 
-AbbasTorabi, abbas.programing@gmail.com
+AbbasTorabi
+mail:abbas.programing@gmail.com
 
 ## License
 
