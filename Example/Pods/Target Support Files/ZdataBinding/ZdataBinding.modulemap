@@ -1,0 +1,6 @@
+framework module ZdataBinding {
+  umbrella header "ZdataBinding-umbrella.h"
+
+  export *
+  module * { export * }
+}

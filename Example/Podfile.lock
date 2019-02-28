@@ -1,0 +1,16 @@
+PODS:
+  - ZdataBinding (0.1.0)
+
+DEPENDENCIES:
+  - ZdataBinding (from `../`)
+
+EXTERNAL SOURCES:
+  ZdataBinding:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZdataBinding: ea2488cfe0e0724a2ac66ed72e92d9452dc8c745
+
+PODFILE CHECKSUM: 818dfc1d16d2e01e5b0dadd86097a5651d3b32bb
+
+COCOAPODS: 1.6.1
