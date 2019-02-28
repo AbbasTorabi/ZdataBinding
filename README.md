@@ -24,7 +24,7 @@ pod 'ZdataBinding'
 
 AbbasTorabi
 
-mail:abbas.programing@gmail.com
+mail: abbas.programing@gmail.com
 
 ## License
 
