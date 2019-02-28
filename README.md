@@ -11,8 +11,38 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 you must create Dynamic variable to bind textfiled value.
 like this:
-var my_variable: Dynamic<String> = Dynamic("")
+```swift
+import ZdataBinding
 
+class ViewControllerViewModel {
+
+  var my_variable: Dynamic<String> = Dynamic("")
+
+}
+```
+your textfield must like this:
+```swift
+import ZdataBinding
+
+class ViewController: UIViewController {
+
+    var viewModel : ViewControllerViewModel! {
+        didSet {
+        // bind from viewModel to view
+        viewModel.my_variable.bind = { [unowned self] in self.myTextField.text = $0 }
+        }
+    @IBOutlet weak var myTextField: BindingTextField! {
+        didSet {
+        // bind from view to viewModel
+            self.myTextField.bind { self.viewModel.my_variable.value = $0 }
+        }
+      }
+        override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel = ViewControllerViewModel()
+        }
+   }
+ ```
 ## Installation
 
 ZdataBinding is available through [CocoaPods](https://cocoapods.org). To install
