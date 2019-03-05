@@ -20,7 +20,7 @@ class ViewControllerViewModel {
 
 }
 ```
-your textfield must like this:
+your viewController class & textfiled must like this:
 ```swift
 import ZdataBinding
 
